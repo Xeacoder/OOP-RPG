@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB371B2E1C6908E1006A1CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB371B2D1C6908E1006A1CCF /* AppDelegate.swift */; };
+		AB371B301C6908E1006A1CCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB371B2F1C6908E1006A1CCF /* ViewController.swift */; };
+		AB371B331C6908E1006A1CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB371B311C6908E1006A1CCF /* Main.storyboard */; };
+		AB371B351C6908E1006A1CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB371B341C6908E1006A1CCF /* Assets.xcassets */; };
+		AB371B381C6908E1006A1CCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB371B361C6908E1006A1CCF /* LaunchScreen.storyboard */; };
+		AB371B431C69092B006A1CCF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB371B421C69092B006A1CCF /* Character.swift */; };
+		AB371B451C691BAE006A1CCF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB371B441C691BAE006A1CCF /* Player.swift */; };
+		AB371B471C691EDF006A1CCF /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB371B461C691EDF006A1CCF /* Enemy.swift */; };
+		AB371B491C6921B6006A1CCF /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB371B481C6921B6006A1CCF /* Goblin.swift */; };
+		AB371B4B1C692665006A1CCF /* GoblinKing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB371B4A1C692665006A1CCF /* GoblinKing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB371B2A1C6908E1006A1CCF /* RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB371B2D1C6908E1006A1CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB371B2F1C6908E1006A1CCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB371B321C6908E1006A1CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB371B341C6908E1006A1CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB371B371C6908E1006A1CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB371B391C6908E1006A1CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB371B421C69092B006A1CCF /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		AB371B441C691BAE006A1CCF /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		AB371B461C691EDF006A1CCF /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		AB371B481C6921B6006A1CCF /* Goblin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goblin.swift; sourceTree = "<group>"; };
+		AB371B4A1C692665006A1CCF /* GoblinKing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoblinKing.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB371B271C6908E1006A1CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB371B211C6908E1006A1CCF = {
+			isa = PBXGroup;
+			children = (
+				AB371B2C1C6908E1006A1CCF /* RPG */,
+				AB371B2B1C6908E1006A1CCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB371B2B1C6908E1006A1CCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB371B2A1C6908E1006A1CCF /* RPG.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB371B2C1C6908E1006A1CCF /* RPG */ = {
+			isa = PBXGroup;
+			children = (
+				AB371B3F1C6908EF006A1CCF /* Model */,
+				AB371B411C6908FC006A1CCF /* View */,
+				AB371B401C6908F7006A1CCF /* Controller */,
+				AB371B2D1C6908E1006A1CCF /* AppDelegate.swift */,
+				AB371B341C6908E1006A1CCF /* Assets.xcassets */,
+				AB371B361C6908E1006A1CCF /* LaunchScreen.storyboard */,
+				AB371B391C6908E1006A1CCF /* Info.plist */,
+			);
+			path = RPG;
+			sourceTree = "<group>";
+		};
+		AB371B3F1C6908EF006A1CCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB371B421C69092B006A1CCF /* Character.swift */,
+				AB371B441C691BAE006A1CCF /* Player.swift */,
+				AB371B461C691EDF006A1CCF /* Enemy.swift */,
+				AB371B481C6921B6006A1CCF /* Goblin.swift */,
+				AB371B4A1C692665006A1CCF /* GoblinKing.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AB371B401C6908F7006A1CCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB371B2F1C6908E1006A1CCF /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AB371B411C6908FC006A1CCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB371B311C6908E1006A1CCF /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB371B291C6908E1006A1CCF /* RPG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB371B3C1C6908E1006A1CCF /* Build configuration list for PBXNativeTarget "RPG" */;
+			buildPhases = (
+				AB371B261C6908E1006A1CCF /* Sources */,
+				AB371B271C6908E1006A1CCF /* Frameworks */,
+				AB371B281C6908E1006A1CCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPG;
+			productName = RPG;
+			productReference = AB371B2A1C6908E1006A1CCF /* RPG.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB371B221C6908E1006A1CCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Ozan;
+				TargetAttributes = {
+					AB371B291C6908E1006A1CCF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = AB371B251C6908E1006A1CCF /* Build configuration list for PBXProject "RPG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB371B211C6908E1006A1CCF;
+			productRefGroup = AB371B2B1C6908E1006A1CCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB371B291C6908E1006A1CCF /* RPG */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB371B281C6908E1006A1CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB371B381C6908E1006A1CCF /* LaunchScreen.storyboard in Resources */,
+				AB371B351C6908E1006A1CCF /* Assets.xcassets in Resources */,
+				AB371B331C6908E1006A1CCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB371B261C6908E1006A1CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB371B491C6921B6006A1CCF /* Goblin.swift in Sources */,
+				AB371B451C691BAE006A1CCF /* Player.swift in Sources */,
+				AB371B471C691EDF006A1CCF /* Enemy.swift in Sources */,
+				AB371B431C69092B006A1CCF /* Character.swift in Sources */,
+				AB371B4B1C692665006A1CCF /* GoblinKing.swift in Sources */,
+				AB371B301C6908E1006A1CCF /* ViewController.swift in Sources */,
+				AB371B2E1C6908E1006A1CCF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB371B311C6908E1006A1CCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB371B321C6908E1006A1CCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB371B361C6908E1006A1CCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB371B371C6908E1006A1CCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB371B3A1C6908E1006A1CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB371B3B1C6908E1006A1CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB371B3D1C6908E1006A1CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RPG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ozan.RPG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB371B3E1C6908E1006A1CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RPG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ozan.RPG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB371B251C6908E1006A1CCF /* Build configuration list for PBXProject "RPG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB371B3A1C6908E1006A1CCF /* Debug */,
+				AB371B3B1C6908E1006A1CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB371B3C1C6908E1006A1CCF /* Build configuration list for PBXNativeTarget "RPG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB371B3D1C6908E1006A1CCF /* Debug */,
+				AB371B3E1C6908E1006A1CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB371B221C6908E1006A1CCF /* Project object */;
+}
