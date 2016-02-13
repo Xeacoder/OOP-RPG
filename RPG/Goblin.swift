@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Goblin: Enemy {
     
@@ -15,6 +16,16 @@ class Goblin: Enemy {
     override var loot: [String] {
         get {
             return ["Ring of Life", "Ring of Courage", "Ring of Curse"]
+        }
+    }
+    
+    override var image: UIImage? {
+        get {
+            if let goblinImage = UIImage(named: "enem1.png") {
+                return goblinImage
+            } else {
+                return nil
+            }
         }
     }
     

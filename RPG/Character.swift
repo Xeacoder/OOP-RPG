@@ -7,17 +7,25 @@
 //
 
 import Foundation
+import UIKit
 
 class Character {
     
     private var _attackPwr: Int!
     private var _hp: Int!
     private var _defence: Int!
+    private var _image = UIImage()
     private var _isAlive: Bool {
         if hp > 0 {
             return true
         } else {
             return false
+        }
+    }
+    
+    var image: UIImage? {
+        get {
+            return _image
         }
     }
     

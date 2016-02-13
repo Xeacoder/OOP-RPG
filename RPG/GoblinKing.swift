@@ -7,10 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
 class GoblinKing: Enemy {
     
     private var _type = "Goblin King"
+    
+    override var loot: [String] {
+        get {
+            return ["Iron Necklade", "Iron Belt", "Glass Belt"]
+        }
+    }
     
     var type: String {
         get {
@@ -18,9 +25,13 @@ class GoblinKing: Enemy {
         }
     }
     
-    override var loot: [String] {
+    override var image: UIImage? {
         get {
-            return ["Iron Necklade", "Iron Belt", "Glass Belt"]
+            if let goblinKingImage = UIImage(named: "enem2.png") {
+                return goblinKingImage
+            } else {
+                return nil
+            }
         }
     }
     
