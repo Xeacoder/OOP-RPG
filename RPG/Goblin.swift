@@ -11,7 +11,11 @@ import UIKit
 
 class Goblin: Enemy {
     
-    private var _type = "Goblin"
+    override var type: String {
+        get {
+            return "Goblin"
+        }
+    }
     
     override var loot: [String] {
         get {
@@ -26,12 +30,6 @@ class Goblin: Enemy {
             } else {
                 return nil
             }
-        }
-    }
-    
-    var type: String {
-        get {
-            return _type
         }
     }
  

@@ -16,6 +16,12 @@ class Enemy: Character {
         }
     }
     
+    var type: String {
+        get {
+            return ""
+        }
+    }
+    
     func dropLoot() -> String? {
         
         if !isAlive && loot.count > 0 {

@@ -52,7 +52,7 @@
                                 </subviews>
                                 <variation key="heightClass=compact" alignment="fill"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fs-1N-ALS">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fs-1N-ALS">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7Fs-1N-ALS" secondAttribute="height" multiplier="25:27" id="s3B-hW-uDq"/>
@@ -72,7 +72,7 @@
                                     <action selector="attackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zQ7-iN-Xax"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining HP: 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFx-XP-iqQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining HP: 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFx-XP-iqQ">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="UpP-4C-3zh"/>
@@ -94,9 +94,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chest" translatesAutoresizingMaskIntoConstraints="NO" id="suR-E6-3yu">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="torch" translatesAutoresizingMaskIntoConstraints="NO" id="kGt-qR-NA7">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
@@ -122,6 +119,9 @@
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chest" translatesAutoresizingMaskIntoConstraints="NO" id="suR-E6-3yu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -160,9 +160,9 @@
                                 <exclude reference="8PH-qT-f3z"/>
                                 <exclude reference="7Fs-1N-ALS"/>
                                 <exclude reference="EFx-XP-iqQ"/>
-                                <exclude reference="suR-E6-3yu"/>
                                 <exclude reference="kGt-qR-NA7"/>
                                 <exclude reference="t3X-on-2Y8"/>
+                                <exclude reference="suR-E6-3yu"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="59B-fr-Pa7"/>
@@ -199,9 +199,9 @@
                                 <include reference="8PH-qT-f3z"/>
                                 <include reference="7Fs-1N-ALS"/>
                                 <include reference="EFx-XP-iqQ"/>
-                                <include reference="suR-E6-3yu"/>
                                 <include reference="kGt-qR-NA7"/>
                                 <include reference="t3X-on-2Y8"/>
+                                <include reference="suR-E6-3yu"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="59B-fr-Pa7"/>
@@ -235,6 +235,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="attackButtonView" destination="7Fs-1N-ALS" id="2sJ-KK-y5w"/>
                         <outlet property="enemyRemainingHP" destination="EFx-XP-iqQ" id="fdx-Ze-j36"/>
                         <outlet property="enemyView" destination="fcr-pr-udq" id="wBa-bo-lCz"/>
                         <outlet property="infoBar" destination="t3X-on-2Y8" id="Ng5-be-6C3"/>

@@ -22,13 +22,13 @@ class Character {
             return false
         }
     }
+    private var _wasCritical = false
     
     var image: UIImage? {
         get {
             return _image
         }
     }
-    
     var attackPwr: Int {
         get {
             return _attackPwr
@@ -52,7 +52,12 @@ class Character {
             return _isAlive
         }
     }
-    
+    var wasCritical: Bool {
+        get {
+            return _wasCritical
+        }
+    }
+
     
     init(hp: Int, defence: Int, attackPwr: Int) {
         _hp = hp
@@ -60,9 +65,24 @@ class Character {
         _attackPwr = attackPwr
     }
     
-    func attempAttack(attackPwr: Int, target: Character) -> Bool {
-        target.hp -= min(attackPwr, (attackPwr-(100/defence)))
-        return true
+    func attempAttack(attackPwr: Int) -> Int {
+        if isCritical() {
+            hp -= 2*(max((attackPwr-defence), attackPwr / 4))
+            return 2*(max((attackPwr-defence), attackPwr / 4))
+        } else {
+            hp -= max((attackPwr-defence), attackPwr / 4)
+            return max((attackPwr-defence), attackPwr / 4)
+        }
+    }
+    
+    func isCritical() -> Bool {
+        if arc4random_uniform(UInt32(100)) < 40 {
+            _wasCritical = true
+            return true
+        } else {
+            _wasCritical = false
+            return false
+        }
     }
     
 }
